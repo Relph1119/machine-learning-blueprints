@@ -1,9 +1,7 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from patsy import dmatrix
-from sklearn.ensemble import RandomForestClassifier
-from sklearn import linear_model
+
 import os
 import sys
 
