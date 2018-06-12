@@ -9,7 +9,7 @@ import sys
 yf.pdr_override()
 
 pd.set_option('display.max_colwidth', 200)
-FILE_PATH = os.path.dirname(sys.path[0])+ os.path.sep + 'data' + os.path.sep + 'spy_ch7.csv'
+FILE_PATH = os.path.dirname(sys.path[0])+ os.path.sep + 'data' + os.path.sep + 'spy_2010_2016.csv'
 
 # get the spy data from yahoo
 #start_date = pd.to_datetime('2010-01-04')

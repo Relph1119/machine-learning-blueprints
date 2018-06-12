@@ -1,35 +1,23 @@
-import getData as gd
+import getData_extend as gd
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 
-spy = gd.spy
-
-spy_c = spy['Close']
+sp = gd.sp
 
 fig, ax = plt.subplots(figsize=(15, 10))
-spy_c.plot(color='k')
+sp['Close'].plot(color='k')
 plt.title("SPY", fontsize=20)
 #plt.show()
 
-first_open = spy['Open'].iloc[0]
-last_open = spy['Close'].iloc[-1]
+long_day_rtn = ((sp['Close'] - sp['Close'].shift(1))/sp['Close'].shift(1)) * 100
 
-spy['Daily Change'] = pd.Series(spy['Close'] - spy['Open'])
-#print(spy['Daily Change'].sum())
+long_id_rtn = ((sp['Close'] - sp['Open'])/sp['Open']) * 100
+long_on_rtn = ((sp['Open'] - sp['Close'].shift(1))/sp['Close'].shift(1)) * 100
 
-#print(np.std(spy['Daily Change']))
-
-spy['Overnight Change'] = pd.Series(spy['Open'] - spy['Close'].shift(1))
-#print(np.std(spy['Overnight Change']))
-
-#print(spy[spy['Daily Change']<0]['Daily Change'].mean())
-#print(spy[spy['Overnight Change']<0]['Overnight Change'].mean())
-
-daily_rtn = ((spy['Close'] - spy['Close'].shift(1))/spy['Close'].shift(1)) * 100
-id_rtn = ((spy['Close'] - spy['Open'])/spy['Open']) * 100
-on_rtn = ((spy['Open'] - spy['Close'].shift(1))/spy['Close'].shift(1)) * 100
-
+#print((sp['Close'] - sp['Close'].shift(1)).sum())
+#print((sp['Close'] - sp['Open']).sum())
+#print((sp['Open'] - sp['Close'].shift(1)).sum())
 def get_stats(s, n=252):
     s = s.dropna()
     wins = len(s[s>0])
@@ -56,6 +44,7 @@ def get_stats(s, n=252):
           '\nMax Loss:', max_l,
           '\nMax Win:', max_w,
           '\nSharpe Ratio:', sharpe_r)
-get_stats(daily_rtn)
-get_stats(id_rtn)
-get_stats(on_rtn)
+
+get_stats(long_day_rtn)
+get_stats(long_id_rtn)
+get_stats(long_on_rtn)
