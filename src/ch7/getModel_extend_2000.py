@@ -1,6 +1,5 @@
 import getData_extend as gd
 import pandas as pd
-from ch7utils import get_stats
 
 sp = gd.sp
 
