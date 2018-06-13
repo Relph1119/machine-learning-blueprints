@@ -1,7 +1,8 @@
 #记录自己学习《Python 机器学习实践指南》这本书的全部过程#
 
-本书上传的所有代码都是可以运行的，在此附上本书的github地址：
-[https://github.com/PacktPublishing/Python-Machine-Learning-Blueprints](https://github.com/PacktPublishing/Python-Machine-Learning-Blueprints)
+本书上传的所有代码都是可以运行的，在此附上本书源码的github地址：
+[https://github.com/PacktPublishing/Python-Machine-Learning-Blueprints](https://github.com/PacktPublishing/Python-Machine-Learning-Blueprints)<br/>
+在此向本书作者和译者表示感谢
 
 ## 运行环境 ##
 Python 版本：3.6.2<br/>
@@ -87,4 +88,4 @@ doc
 **2.** 由于第五章和第六章的数据获取不到，不能编写实验代码。<br/>
 **3.** 第八章由于graphlab目前只能支持Python2.7，不能支持Python3.X，故不能进行深度学习实验。<br/>
 **4.** 第九章的聊天机器人的实验非常棒，建议亲手试试看。<br/>
-**5.** 上述项目没有设计任何部署的步骤。
+**5.** 上述项目没有涉及任何部署的步骤。
