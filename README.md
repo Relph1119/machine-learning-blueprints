@@ -1,4 +1,4 @@
-#记录自己学习《Python 机器学习实践指南》这本书的全部过程#
+# 记录自己学习《Python 机器学习实践指南》这本书的全部过程 #
 
 本书上传的所有代码都是可以运行的，在此附上本书源码的github地址：
 [https://github.com/PacktPublishing/Python-Machine-Learning-Blueprints](https://github.com/PacktPublishing/Python-Machine-Learning-Blueprints)<br/>
