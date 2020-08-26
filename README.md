@@ -1,8 +1,6 @@
 # 《Python 机器学习实践指南》读书笔记与代码分享 #
 
-本书上传的所有代码都是可以运行的，在此附上本书源码的github地址：
-[https://github.com/PacktPublishing/Python-Machine-Learning-Blueprints](https://github.com/PacktPublishing/Python-Machine-Learning-Blueprints)<br/>
-在此向本书作者和译者表示感谢
+&emsp;&emsp;本书上传的所有代码都是可以运行的，在此附上本书源码的github地址：[https://github.com/PacktPublishing/Python-Machine-Learning-Blueprints](https://github.com/PacktPublishing/Python-Machine-Learning-Blueprints)，在此向本书作者和译者表示感谢
 
 ## 运行环境 ##
 Python 版本：3.6.2  
